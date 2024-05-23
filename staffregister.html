@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main-bg.css" />
+    <link rel="stylesheet" type="text/css" href="css/staffregister.css" />
+    <title>スタッフ登録</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/staffregister.js"></script>
+</head>
+<body>
+    <div class="main_bg" id="top">
+        <header>
+            <div class="headerLeft">
+                <a href="index.html"><img src="img/top/header_logo.png" alt=""></a>
+            </div>
+        </header>
+        <div class="middle">
+            <div id="staff" class="staffRegister">
+                <h1>JOIN US ！</h1>
+                <form autocomplete="off" id="staffRegister">
+                    <input type="text" placeholder="staffname" id="staffname_data">
+                    <input type="text" placeholder="id" id="staffId_data">
+                    <input type="number" placeholder="age" id="staffAge_data">
+                    <input type="text" placeholder="language" id="staffLanguage_data">
+                    <input type="password" placeholder="password" id="staffPass_data">
+                    <input type="file" id="staffImage_data" class="file-input">
+                    <label for="staffImage_data" class="file-label">Upload Image</label>
+                </form>
+                <button type="button" class="button submit" id="confirmButton">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+    <div class="lastMassage">
+        <a href="index.html">TOPへ戻る</a>
+        <footer>
+            <p>copyrights 2018 Cheese Academy Tokyo All Rights Reserved.</p>
+        </footer>
+    </div>
+    <div class="confirm hidden" id="confirm">
+        <div class="confirmContent">
+            <div class="confirmContentAll">
+                <div class="confirmContentLeft">
+                    <ur>
+                        <li>USERNAME</li>
+                        <li>ID</li>
+                        <li>AGE</li>
+                        <li>LANGUAGE</li>
+                        <li>PASSWORD</li>
+                    </ur>
+                </div>
+                <div class="confirmContentCenter">
+                    <ur>
+                        <li>：</li>
+                        <li>：</li>
+                        <li>：</li>
+                        <li>：</li>
+                        <li>：</li>
+                    </ur>
+                </div>
+                <div class="confirmContentRight" id="confirmContent">
+                    <ur>
+                        <li id="userConfirm"></li>
+                        <li id="idConfirm"></li>
+                        <li id="ageConfirm"></li>
+                        <li id="languageConfirm"></li>
+                        <li id="passwordConfirm"></li>
+                    </ur>
+                </div>
+            </div>
+            <p>この内容で登録してよろしいですか？</p>
+        </div>
+        <div class="buttons">
+            <button class="confirmButton" id="createAccount">CREATE ACCOUNT</button>
+            <button class="confirmButton" id="returnAccount">RETURN</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.main_bg {
+    background-position: center;
+    height: 1032px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 230, 1, 0.5);
+}
+
+.middle {
+    width: 80%;
+    height: 90%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.studentList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0%;
+}
+
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#studentTable th,
+#studentTable td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#studentTable th {
+    background-color: #b6eff5;
+}
+
+#studentTable tbody tr {
+    background-color: #ffffff;
+}
+
+#studentTable tr:hover {
+    background-color: #dbf276;
+}
+
+/* プルダウンメニューのスタイル */
+select.finalStatusSelect,
+select.futurePlanSelect {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}

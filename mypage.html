@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <link rel="stylesheet" type="text/css" href="css/main-bg.css" />
+    <link rel="stylesheet" type="text/css" href="css/mypage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/mypage.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="main_bg" id="top">
+        <header>
+            <div class="headerLeft">
+                <a href="index.html"><img src="img/top/header_logo.png" alt=""></a>
+            </div>
+        </header>
+        <div class="middle">
+            <div id="student" class="student">
+                <div id="hello" class="hello"></div>
+                <div id="studentInfo" class="studentInfo">
+                    <div id="studentInfoLeft" class="studentInfoLeft">
+                        <p id="studentId"></p>
+                        <p id="studentName"></p>
+                        <p id="studentAge"></p>
+                    </div>
+                    <div id="studentInfoRight" class="studentInfoRight">
+                        <p id="studentEmail"></p>
+                        <p id="studentPass"></p>
+                        <P id="studentProgress"></P>
+                    </div>
+                </div>
+            </div>
+            <div class="graduateBox">
+                <p id="graduate" class="graduate graduateTrigger">あなたは卒業資格があります🎉</p>
+            </div>
+            <div class="lesson">
+                <div class="lessonContent">
+                    <ul >
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p>履修科目</p>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p class="flow">入学式</p>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p class="flow">栄養学講座</p>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p class="flow">製造講座</p>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p class="flow">実地研修</p>
+                        </li>
+                        <li>
+                            <p class="flow">卒業試験</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lessonProgress">
+                    <ul>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <p>履修状況</p>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <div id="toggle1" class="switchArea toggle1">
+                                <input type="checkbox" id="switch1">
+                                <label for="switch1"><span></span></label>
+                                <div id="swImg"></div>
+                            </div>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <div id="toggle2" class="switchArea toggle2">
+                                <input type="checkbox" id="switch2">
+                                <label for="switch2"><span></span></label>
+                                <div id="swImg"></div>
+                            </div>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <div id="toggle3" class="switchArea toggle3">
+                                <input type="checkbox" id="switch3">
+                                <label for="switch3"><span></span></label>
+                                <div id="swImg"></div>
+                            </div>
+                        </li>
+                        <li style="border-bottom: solid 1px rgba(143, 200, 253, 1);">
+                            <div id="toggle4" class="switchArea toggle4">
+                                <input type="checkbox" id="switch4">
+                                <label for="switch4"><span></span></label>
+                            <div id="swImg"></div>
+                        </div>
+                        </li>
+                        <li>
+                            <div id="toggle5" class="switchArea toggle5">
+                                <input type="checkbox" id="switch5">
+                                <label for="switch5"><span></span></label>
+                                <div id="swImg"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastMassage">
+        <a href="index.html">Log Out</a>
+        <footer>
+            <p>copyrights 2018 Cheese Academy Tokyo All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
